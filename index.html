@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  </head>
+  <div class="form-body">
+  <body>
+    <section id="first-section">
+      <img src="https://files.jotform.com/jufs/waltermiller/form_files/Untitled%20design%20-%202022-04-21T094936.587.6260fe8c8b4335.62147908.png?md5=xzypilm2uJo2BQq6rvGkDA&expires=1704052559" alt="logo">
+      <h1 id="title">Product Customer Feedback Form</h1>
+      <p id="description">Thank you for taking time to provide feedback. We appreciate hearing from you and will review your comments carefully. </p>
+    </section>
+
+<!--Rating number field-->
+<form id="survey-form">
+  <!--Radio-->
+  <fieldset class="recc-field">
+    <legend id="ask-legend">Would you recommend it to your friends and colleagues?</legend>
+    <label for="survey-form"><input id="survey-form" type="radio" name="recc" value="yes"/>Yes</label>
+        <label for="survey-form"><input id="survey-form" type="radio" name="recc" value="no"/>No</label>  
+  </fieldset>
+
+  <!--Text area-->
+  <fieldset>
+    <label>Do you have any suggestions to improve our product and service?</label>
+    <textarea id="survey-form"></textarea>
+  </fieldset>  
+
+  <fieldset>
+    <label id="number-label" for="number">How satisfied are you with our company overall?</label>
+    <input name="number" id="number" type="number" min="1" max="5" placeholder="Select rating"/>
+  </fieldset>
+
+<!--Dropdown field-->
+  <fieldset>
+    <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label>
+    <select id="dropdown">
+      <option value="1">Student</option>
+            <option value="2">Full time</option>
+                  <option value="1">Part time</option>
+                        <option value="1">Other</option>
+    </select>
+  </fieldset>    
+
+    <!--Checkbox-->
+  <fieldset>
+    <div class="form-group">
+      <p>What would you like to see more?</p>
+      <label>   <input name="prefer" type="checkbox" id="#survey-form" value="comm"/>More communication</label>
+      <label>   <input name="prefer" type="checkbox" id="#survey-form" value="features"/>More features</label>
+      <label>   <input name="prefer" type="checkbox" id="#survey-form" value="challenge"/>More challenging</label>
+    </div>
+  </fieldset>  
+
+<!--Name fields-->
+    <fieldset class="inline">
+      <label id="name-label" for="name">Full Name</label>
+      <div class="name-input">
+        <span class="form-container">
+          <input name="name" id="name" type="text" required placeholder="First"/>
+          <span class="form-sub-label">
+            <div>First Name</div>
+          </span>
+        </span>
+        <span class="form-container">
+           <input name="name" id="name" type="text" required placeholder="Last"/>
+          <span class="form-sub-label">
+            <div>Last Name</div>
+          </span>
+        </span>
+      </div>
+    </fieldset>
+
+<!--Email field-->
+    <fieldset class="inline">
+      <div class="email-container">
+        <label id="email-label" for="email-label">E-mail Address</label>
+        <span class="form-container">
+          <input name="email" id="email" type="email" required placeholder="ex: myName@email.com"/>
+        </span>
+                  <span class="form-sub-label">
+            <div>example@example.com</div>
+          </span>
+      </div>
+    </fieldset>
+
+    <section>
+  <button id="submit" type="submit">Submit</button>
+</section>  
+</form>
+  </body>
+  </div>
+</html>
